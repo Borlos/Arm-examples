@@ -5,4 +5,4 @@ arm-none-eabi-objcopy -O binary t.elf t.bin # convierte t.elf a t.bin
 
 arm-none-eabi-readelf -a t.elf  #Muestra el elf generado
 
-#qemu-system-arm -M versatilepb -m 128M -kernel t.bin -serial mon:stdio  #ejecuta t.bin en qemu
+qemu-system-arm -M versatilepb -m 128M -kernel t.bin -serial mon:stdio  #ejecuta t.bin en qemu

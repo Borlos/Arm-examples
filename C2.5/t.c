@@ -5,7 +5,7 @@ Inicializa UARTs y usa UART0 para el puerto serie E/S
 int v[]={1,2,3,4,5,6,7,8,9,10}; //array de datos
 int sum;
 
-#include <string.h>     //Contiene strlen(), strcmp(), etc...
+#include "string.c"     //Contiene strlen(), strcmp(), etc...
 #include "uart.c"       //archivo con el codigo del driver de UART
 
 int main(){
