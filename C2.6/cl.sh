@@ -3,3 +3,5 @@ rm -f t.bin
 rm -f t.elf
 rm -f t.o
 rm -f ts.o
+rm -f image1.o
+rm -f image2.o

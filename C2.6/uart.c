@@ -6,6 +6,9 @@ para carácteres E/S y comprueba los registros de flags para su lectura.
 /**Define los offsets por bytes de los registros desde char *base **/
 #define UDR 0x00
 #define UFR 0x18
+#define BASE 10
+
+char *ctable = "0123456789ABCDEF";
 
 typedef volatile struct uart{   //define la estructura de datos de un UART
     char *base; //Direccion base como char*
@@ -47,9 +50,6 @@ int uprints(UART *up, char *s){ //Saca string de carácteres
 }
 
 //Implementación de uprintf
-
-char *ctable = "0123456789ABCDEF";
-int BASE = 10;
 
 int urpu(UART *up, unsigned int x){
     char c;
