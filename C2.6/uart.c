@@ -19,7 +19,7 @@ UART uart[4]; //4 estructuras UART
 int uart_init(){    //función de inicialización de UART
     int i;
     UART *up;
-    for(i = 0; i < 3; i++){ //uart0 a uart2, adyacentes
+    for(i = 0; i < 4; i++){ //uart0 a uart2, adyacentes
         up = &uart[i];
         up->base = (char *)(0x101F1000 + i*0x1000);
         up->n = i;
