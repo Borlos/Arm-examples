@@ -1,0 +1,8 @@
+Important differences between this and the book:
+
+*added all unused handlers in ts.s, redirect to C functions in "exceptions.c"
+*added "exceptions.c" to manage all other exceptions with infinite loops
+*added VIC Base and referenced Adresses in "defines.h"
+*added a *memcpy function in string.c, is the last function
+*added a clear of timer chars in "timer.c" before writing others over them, inside the timer_handler.
+
